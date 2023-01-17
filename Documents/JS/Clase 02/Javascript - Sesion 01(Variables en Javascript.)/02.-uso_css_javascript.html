@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+        }
+        h2{
+            font-size: 30px !important;
+        }
+    </style>
+    <h2>Uso de CSS en Javascript</h2>
+    <div id="color">
+    </div>
+    <div id="blue">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dicta vitae assumenda labore ipsum. Voluptate ipsum atque modi. Aperiam expedita voluptate eaque excepturi? Quisquam provident, adipisci iure expedita ipsam facere.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptatibus eos tempora nemo perspiciatis. Vel consectetur provident fugit quisquam ducimus veniam dolore quidem, ipsam, exercitationem eligendi tenetur. Hic, earum voluptatem.
+        </p>
+    </div>
+    <script>
+        color = document.querySelector('#color')
+
+        color.style.background = "red"
+        color.style.width = "300px"
+        color.style.height = "200px"
+
+        //Color azul
+
+        blue = document.getElementById('blue')
+
+        blue.style.background = "blue"
+        blue.style.width = "300px"
+        blue.style.padding = "10px"
+        blue.style.color = "white"
+        blue.style.textAlign = "justify"
+        blue.style.margin = "10px"
+    </script>
+</html>

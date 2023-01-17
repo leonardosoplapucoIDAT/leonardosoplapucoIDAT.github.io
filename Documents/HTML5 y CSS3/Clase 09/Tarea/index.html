@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <form>
+            <div class="title">
+                formulario de registro
+            </div>
+            <div class="subtitle">
+                Complete el formulario con este registro
+            </div>
+
+            <div class="line"></div>
+
+            <section>
+                <div class="span">
+                    nombres y apellidos
+                </div>
+                <input type="text" required class="input">
+            </section>
+
+            <section>
+                <div class="span">
+                    dni
+                </div>
+                <input type="text" pattern="[0-9]*" minlength="8" maxlength="8" required class="input">
+            </section>
+            
+            <section>
+                <div class="span">
+                    teléfono
+                </div>
+                <input type="text" pattern="[0-9]*" minlength="6" maxlength="9" required class="input">
+            </section>
+
+            <section>
+                <div class="span">
+                    estudios realizados
+                </div>
+                <input type="checkbox" name="" id="">Primaria
+                <input type="checkbox" name="" id="">Secundaria
+                <input type="checkbox" name="" id="">Técnico
+                <input type="checkbox" name="" id="">Universitario
+            </section>
+
+            <section>
+                <div class="span">
+                    estado civil
+                </div>
+                <input type="radio" name="estado" id="">Soltero
+                <input type="radio" name="estado" id="">Casado
+                <input type="radio" name="estado" id="">Viudo
+                <input type="radio" name="estado" id="">Divorciado
+            </section>
+
+
+            <section>
+                <div class="span">
+                    provincia
+                </div>
+                <input type="text" required class="input">
+            </section>
+
+            <section>
+                <div class="span">
+                    correo electrónico
+                </div>
+                <input type="email" required class="input">
+            </section>
+
+            <section class="buttons">
+                <input type="reset" value="Limpiar" class="clear">
+                <input type="submit" value="Enviar" class="submit">
+            </section>
+        </form>
+    </div>
+
+<script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 08 / Canasta 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="red"></div>
+        <div class="green"></div>
+        <h1>Sorteo de canasta 2022</h1>
+
+        <form action="envio.php" method="post">
+            <section>
+                <p>Apellidos y nombres</p>
+                <input class="input" type="text" placeholder="Nombres y apellidos">
+            </section>
+            <section>
+                <p>Correo electrónico</p>
+                <input class="input" type="email" placeholder="Correo eléctronico">
+            </section>
+            <section>
+                <p>Teléfono</p>
+                <input class="input" type="number" placeholder="Teléfono">
+            </section>
+            <section>
+                <p>Dirección</p>
+                <input class="input" type="text" placeholder="Dirección">
+            </section>
+            <section>
+                <p>Distrito</p>
+                <select name="" id="">
+                    <option value="">Distrito</option>
+                    <option value="">El Agustino</option>
+                    <option value="">Breña</option>
+                    <option value="">Callao</option>
+                    <option value="">Santa Anita</option>
+                    <option value="">Miraflores</option>
+                    <option value="">Molina</option>
+                </select>
+            </section>
+            <section>
+                <p>Sexo</p>
+                <input class="radio" type="radio" name="Sexo" id="">Masculino
+                <input class="radio" type="radio" name="Sexo" id="">Femenino
+            </section>
+            <section>
+                <p>Propiedades</p>
+                <input class="checkbox" type="checkbox" name="" id="">Casa propia
+                <input class="checkbox" type="checkbox" name="" id="">Auto propio                
+                <input class="checkbox" type="checkbox" name="" id="">Departamento propio
+            </section>
+            <section>
+                <p>Comentarios</p>
+                <textarea placeholder="Mensaje"></textarea>
+            </section>
+            <section>
+                <input class="submit" type="submit" value="Enviar">
+            </section>
+        </form>
+    </div>
+</body>
+</html>

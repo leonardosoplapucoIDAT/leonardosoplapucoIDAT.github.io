@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perú Nuevo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="#" class="logo">
+            NavBar
+        </a>
+
+        <div class="hamburguer">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="link link-1">Home</a></li>
+                <li><a href="#" class="link link-2">Features</a></li>
+                <li><a href="#" class="link link-3">Pricing</a></li>
+                <li><a href="#" class="link link-4">Disabled</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="banner__container">
+    <div class="banner">
+        <div class="banner__text">
+            Título importante
+        </div>
+        <img src="https://1.bp.blogspot.com/-IjMER3CRClE/XTM9E0-HmII/AAAAAAAAPtI/Apt_olndgN8Ljt1QLfKWjw2ERsSAGSlHQCLcBGAs/s1600/untitled%2B%25283%2529.png">
+    </div>
+</div>
+
+<div class="block__container">
+    <div class="block__content">
+        <div class="nosotros">
+            <section>
+                <div class="title">Nosotros</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis odit tempora perferendis incidunt voluptatibus officia id, ut neque, ipsam illum. Incidunt quaerat cupiditate accusantium minus. Obcaecati ut velit nam.
+                    Reiciendis neque praesentium quos minima reprehenderit? Odit eaque magni est atque eligendi, corporis nostrum veritatis libero. Rem ipsum architecto quos doloremque beatae expedita sequi cumque odio dolorum ipsa. Temporibus, quo!
+                </p>
+            </section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cabeza_clava_en_su_ubicacion_original_13122009.JPG/1200px-Cabeza_clava_en_su_ubicacion_original_13122009.JPG">
+        </div>
+    </div>
+</div>
+
+<div class="block__container parallax">
+    <div class="block__content parallax__">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore soluta quo perspiciatis saepe quas iusto eligendi porro mollitia. Fugiat dignissimos explicabo ducimus corrupti omnis consequatur tenetur, unde dolorum voluptatem ipsam!
+        </p>
+    </div>
+</div>
+
+<div class="block__container people">
+    <div class="block__content people__">
+        <div class="title">
+            Nuestro personal
+        </div>
+
+        <section>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <span>Leonardo Soplapuco</span>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, rem?
+            </p>
+        </section>
+        <section>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <span>Leonardo Soplapuco</span>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, rem?
+            </p>
+        </section>
+        <section>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <span>Leonardo Soplapuco</span>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, rem?
+            </p>
+        </section>
+        <section>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <span>Leonardo Soplapuco</span>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, rem?
+            </p>
+        </section>
+    </div>
+</div>
+
+<div class="block__container">
+    <div class="block__content contact">
+        <form class="form" id="form">
+            <div class="title">
+                Déjanos un mensaje
+            </div>
+
+            <section>
+                <span>Apellidos y nombres</span>
+                <input type="text">
+            </section>
+            <section>
+                <span>Dirección</span>
+                <input type="text">
+            </section>
+            <section>
+                <span>Email</span>
+                <input type="text">
+            </section>
+            <section>
+                <span>Comentarios</span>
+                <textarea></textarea>
+            </section>
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+    </div>
+</div>
+
+<div class="block__container all">
+    <div class="block__content">
+        Todos los derechos reservados a &copy; Leonardo Soplapuco
+    </div>
+</div>
+
+<script>
+
+hamburguer = document.querySelector('.hamburguer')
+menu = document.querySelector('.menu')
+
+hamburguer.addEventListener('click', function(){
+    menu.classList.toggle('menu__active')
+})
+
+</script>
+</body>
+</html>

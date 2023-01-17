@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Variables en Javascript</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <h1>Variables en Javascript</h1>
+    <p>Aqui aprenderemos el uso de variables</p>
+    <script>
+        //Variables de texto
+        let instituto = "Idat";
+        document.write("Hola, estoy estudiando en " + instituto)
+        
+        //Variables númericas
+        let year = 23;
+        document.write("<br>Hoy cumples tus " + year)
+
+        //Variables de Array
+        let colores = ["red", "yellow", "blue"];
+        document.write("<br>Usted escogió el color: " + colores[0])
+
+        //Get some info form the user
+        name = prompt('Ingrese su nombre')
+        document.write("<br>Bienvenid@ " + name)
+    </script>
+</body>
+</html>

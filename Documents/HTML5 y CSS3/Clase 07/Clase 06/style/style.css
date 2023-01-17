@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma;
+    background: darkgray;
+}
+header{
+    width: 1000px;
+    background: black;
+    margin: auto;
+    overflow: hidden;
+}
+#logo img{
+    width: 250px;
+    float: left;
+}
+#redes img{
+    float: right;
+    margin-top:30px;
+    margin-right: 20px;
+}
+#botonera{
+    width: 1000px;
+    background: black;
+    margin: auto;
+    text-align: center;
+}
+#botonera ul{
+    list-style: none;
+}
+#botonera li{
+    display: inline-block;
+}
+#botonera a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+#botonera a:hover{
+    background: darkblue;
+    color: yellow;
+}
+/*Estilos para Banner */
+main img{
+    width: 1000px;
+    display: block;
+    margin: auto;
+}
+/*Estilos para el Section*/
+section{
+    width: 1000px;
+    margin: auto;
+    background:orange;
+    overflow: hidden;
+}
+article{
+    width: 250px;
+    float: left;
+}
+#botonera-v ul{
+    list-style: none;
+}
+#botonera-v a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding:20px;
+    display: block;
+    margin-bottom: 10px;
+}
+aside{
+    width: 700px;
+    float: right;
+}
+aside h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    line-height:30px;
+}
+footer{
+    width: 1000px;
+    background: black;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+#pie{
+    text-align: center;
+}
+#pie ul{
+    list-style: none;
+}
+#pie li{
+    display: inline-block;
+}
+#pie a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

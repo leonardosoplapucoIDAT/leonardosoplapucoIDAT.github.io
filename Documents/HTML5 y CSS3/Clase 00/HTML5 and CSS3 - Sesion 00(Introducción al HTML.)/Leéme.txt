@@ -1,0 +1,16 @@
+FECHA: 
+CURSO: HTML5 and CSS3
+PROF. MIGUEL PALLIN 
+SESIÓN: 00
+------------------------------------------------------------------------------------------------
+
+. TEMAS:
+	
+	Introducción
+	Qué son páginas Web?
+	El código HTML5
+	Compatibilidad con navegadores
+	La etiqueta p, br, h1,h2,h3,h4,h5,h6
+
+------------------------------------------------------------------------------------------------ 
+https://miguelpallin.com/
