@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uso de Jquery</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <style>
+        .caja{
+            width:500px;
+            height:200px ;
+            background:blue;
+            transition: all 300ms ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Jquery en CSS</h1>
+    <p>Aqui utilizaremso el Efecto CSS de Jquery</p>
+    <div class="caja"></div>
+
+    <script>
+        $('.caja').click(function(){
+            $('.caja').css({"background":"black", "width":"200px"})
+        });
+    </script>
+</body>
+</html>
