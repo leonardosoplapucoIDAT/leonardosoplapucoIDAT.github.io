@@ -1,0 +1,41 @@
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    width: 350px;
+}
+.img-article{
+    width: 100%;
+}
+.flechas{
+    background: deeppink;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50%;
+}
+/*Estilos para Redes*/
+.redes{
+    background: deeppink;
+    padding:50px 0px;
+    display: flex;
+    justify-content: center;
+    margin:20px 0px;
+}
+.red{
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.linea{
+    border: 0 none;
+    background: deeppink;
+    height: 10px;
+    margin:10px 0px;
+}

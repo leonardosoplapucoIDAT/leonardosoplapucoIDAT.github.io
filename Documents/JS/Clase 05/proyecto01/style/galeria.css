@@ -1,0 +1,18 @@
+.fondo-galeria{
+    margin:100px 0px;
+}
+.text-galeria{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.galeria{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img-galeria{
+    width: 22%;
+    margin-bottom:10px;
+}

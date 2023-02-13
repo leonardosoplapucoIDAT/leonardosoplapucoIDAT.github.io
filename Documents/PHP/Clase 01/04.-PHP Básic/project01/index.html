@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spa CAOH</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/menu.css">
+   <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+    <div id="inicio"></div>
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!--Menu Hamburguesa-->
+            <div class="menuh" onclick="llamar()" id="menu">
+                <label class="menu fa-solid fa-bars"></label>
+            </div>
+       
+            <!--Fin del Menu Hamburguesa-->
+            <nav class="botonera" id="botonera">
+                <ul>
+                    <li><a href="#inicio" class="active">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#contactos">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        let enlaces=document.querySelectorAll(".botonera a");
+            enlaces.forEach((element)=>{
+                element.addEventListener("click",(event)=>{;
+                    enlaces.forEach((link)=>{
+                        link.classList.remove("active");
+                    });
+                        event.target.classList.add("active");
+                    
+                });
+            });
+    </script>
+    
+
+ 
+
+    <div class="banner">
+    <div class="overlay">
+        <div class="cont-banner">
+            <h2>SPA CAOH</h2>
+            <p>Ven y Relajate con Nosotros</p>
+            <button onclick="alert('Gracias por Susribirse')">Suscribirse</button>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <main id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem at quasi quia esse nisi repudiandae tenetur fuga mollitia exercitationem pariatur similique, a nam animi magnam perspiciatis minima ex fugit!
+        Officiis quia omnis eos qui velit ab. Molestias placeat nobis explicabo magnam quas aliquam quaerat architecto, amet rem excepturi enim. Natus eaque nulla numquam iusto ipsam unde repellat dicta assumenda.
+        Placeat, dignissimos veniam! Deserunt veniam doloremque libero possimus officia, rem voluptas aliquam facere dolore vel voluptatibus est ipsa quidem laborum sit recusandae sed iste voluptate nam aut? Cupiditate, eaque vero.</p>
+            <img src="img/spa00.jpg" alt="" class="img-responsive" onmouseover="src='img/spa01.jpg';" onmouseout="src='img/spa00.jpg';">
+    </main>
+    <!-- Redes Sociales -->
+    <div class="redes">
+        <label class="red fa-brands fa-facebook"></label>
+        <label class="red fa-brands fa-twitter"></label>
+        <label class="red fa-brands fa-youtube"></label>
+    </div>
+    <section>
+        <article>
+            <h2>Nuestro Galeria</h2>
+            <hr class="linea">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cumque dicta non quam, repellat ducimus reprehenderit doloribus corporis, nihil perspiciatis perferendis asperiores omnis ut? Dolorem soluta sint illum id non.</p>
+        </article>
+        <article style="display:flex; align-items: center;">
+            <label class="flechas fa-solid fa-chevron-left" onclick="atras()"></label>
+            <img src="img/spa01.jpg" alt="" class="img-article" id="img">
+            <label class="flechas fa-solid fa-chevron-right" onclick="adelante()"></label>
+        </article>
+    </section>
+    <script>
+     
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ff10f625f5.js" crossorigin="anonymous"></script>
+</body>
+</html>

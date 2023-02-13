@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --blue:#0D5E8B;
+    --white:#fff;
+    --text:#333;
+}
+
+body{
+    background: var(--white);
+    color: var(--text);
+}
+
+header{
+    background: var(--blue);
+    padding: 0 10px;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.header{
+    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo img{
+    height: 70%;
+}
+
+.hamburguer{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.line{
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    width: 100%;
+    height: 4px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.line-1{
+    top: 0;
+}
+
+.line-2{
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.line-3{
+    bottom: 0;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown{
+    display: none !important;
+}
+
+.link{
+    color: var(--white) !important;
+    cursor: pointer;
+}
+
+/**/
+
+.block__container__slider{
+    margin-top: 90px;
+    width: 100%;
+    height: calc(100vh - 90px);
+    max-height: 490px;
+}
+
+.slider__container{
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.slide-contenedor{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mislider img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    transition: all 500ms ease;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+}
+
+.slider__button{
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    cursor: pointer;
+    z-index: 5;
+    color: var(--white);
+    font-size: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.before{
+    left: 10px;
+}
+
+.after{
+    right: 10px;
+}
+
+.barras{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 5;
+}
+
+.barra{
+    cursor: pointer;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    transition: all 500ms ease;
+    background: var(--white);
+}
+
+.active-{
+    background: #444;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/**/
+
+.block__container{
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.block__content{
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.block__title{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+}
+
+.block__sub-title{
+    width: 100%;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/**/
+
+.block__content-1{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 10px;
+}
+
+.conten-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.list li{
+    list-style: url('https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/vineta.png');
+}
+
+.conten-2{
+    display: flex;
+}
+
+.conten-2 img{
+    margin: auto;
+    width: 100%;
+}
+
+/**/
+
+.block__conten-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.block__conten-2 .block__title{
+    margin-bottom: 0;
+}
+
+.conten-4 img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.conten-5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.conten-5 div{
+    width: 100%;
+}
+
+/**/
+
+footer{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.footer{
+    max-width: 1500px !important;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.network{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background: #111B4B;
+    border-radius: 100%;
+}
+
+.network i{
+    margin: auto;
+    color: var(--white);
+    font-size: 25px;
+}
+
+.more-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.more{
+    width: 100%;
+    text-align: center;
+}
+
+/**/
+
+.block__container-3{
+    margin-top: 80px;
+}
+
+.promociones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.promo{
+    width: 100%;
+    overflow: hidden;
+}
+
+.promo-img{
+    width: 100%;
+    height: 200px;
+}
+
+.promo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-name{
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid #000;
+    font-weight: 600;
+}
+
+.promo-pryce{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.promo-pryce span{
+    font-size: 30px;
+}
+
+.promo-text{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    transition: all 500ms ease;
+}
+
+.promo-text__active{
+    height: 300px;
+}
+
+.promo-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.promo-link a{
+    color: var(--text);
+    transition: all 300ms ease;
+    font-weight: 600;
+}
+
+.promo-link a:hover{
+    color: #007bff;
+}
+
+.block__content-4{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.others{
+    color: var(--white);
+    background: #007bff;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+/**/
+
+.block__container-5{
+    margin-top: 90px;
+}
+
+.accordion-item{
+    margin: auto;
+    max-width: 1100px;
+}
+
+.accordion-button{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table{
+    width: 100%;
+}
+
+table tr th{
+    font-size: 20px;
+}
+
+table tr th span, table tr td span{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.traslados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.traslado{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.traslado-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms ease;
+    z-index: 0;
+}
+
+.traslado:hover .traslado-img{
+    scale: 1.4;
+}
+
+.traslado-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(0 0 0 / 0.4);
+    z-index: 1;
+}
+
+.traslado-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.priv{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.span{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.traslado-pryce{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.car{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 45%;
+    height: auto;
+}
+
+.traslado-link{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    translate: -50% 0;
+    z-index: 1;
+    color: var(--white) !important;
+    background: #007bff;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/**/
+
+.block__container-7{
+    margin-top: 90px;
+}
+
+.block__container-7 .block__title{
+    text-align: left;
+    color: #007bff;
+}
+
+.guia-list{
+    display: grid;
+    gap: 10px;
+}
+
+.guia-list li{
+    list-style: url('https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/vineta.png');
+}
+
+/**/
+
+.block__container-8{
+    margin-top: 90px;
+}
+
+.block__content-8{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form__container{
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    height: 40px;
+    border: 1px solid #555;
+}
+
+.form__item{
+    background: rgba(0 0 0 / 0.1);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-right: 1px solid #555;
+}
+
+.form__item i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.input, textarea{
+    border: 0;
+    outline: 0;
+    padding: 0 10px;
+}
+
+.form__section:nth-child(3){
+    height: 190px;
+}
+
+textarea{
+    padding: 10px;
+    resize: none;
+}
+
+.form__section:nth-child(4){
+    background: red;
+    border: 0;
+    width: 100%;
+    height: 50px;
+    grid-column: 1/-1;
+    display: flex;
+}
+
+.submit{
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: #007bff;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.oficinas-list li{
+    list-style: url('https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/vineta.png');
+}
+
+.oficinas__link{
+    color: #007bff;
+    font-weight: 500;
+}
+
+/**/
+
+.block__container-9{
+    margin-top: 90px;
+}
+
+/**/
+
+.block__container-10{
+    margin-top: 90px;
+}
+
+.lima{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lima-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lima-2 img{
+    width: 60%;
+}
+
+.text-pryce{
+    text-align: center;
+}
+
+.text-pryce span{
+    font-size: 25px;
+}
+
+/**/
+
+.block__container-11{
+    margin-top: 90px;
+}
+
+.lima-paracas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lima-paracas-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lima-paracas-2 img{
+    width: 60%;
+}
+
+/**/
+
+.block__container-12{
+    margin-top: 90px;
+}
+
+.lima-paracas-ica{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lima-paracas-ica-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lima-paracas-ica-2 img{
+    width: 70%;
+}
+
+/**/
+
+.block__container-13{
+    margin-top: 90px;
+}
+
+.lima-paracas-ica-nazca{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lima-paracas-ica-nazca-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lima-paracas-ica-nazca-2 img{
+    width: 70%;
+}
+
+/**/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+  
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+  
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+  
+.modal-content{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 90%;
+}
+ 
+.close{
+    color: #fff;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.close i{
+    font-size: 25px;
+}
+  
+.close:hover {
+    color: #bbb;
+    text-decoration: none;
+}  

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Servicios turísticos</title>
+    <link rel="shortcut icon" href="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="header">
+    <a href="index.html" class="logo">
+        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/logo.png">
+    </a>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="link">Inicio</a></li>
+            <li><a href="promociones.html" class="link">Promociones</a></li>
+            <li>
+                <a href="#" class="link servicies">Servicios<i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="traslados.html" class="link">Traslados</a></li>
+                    <li><a href="guias.html" class="link">Guía de Trabajo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="link city">City Tours<i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="citytourslima.html" class="link">City Tours Lima</a></li>
+                    <li><a href="limaparacas.html" class="link">Lima y Paracas</a></li>
+                    <li><a href="limaparacasica.html" class="link">Lima - Paracas e Ica</a></li>
+                    <li><a href="#" class="link">Lima - Paracas - Ica y Nazca</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html" class="link">Galeria de Fotos</a></li>
+            <li><a href="contacto.html" class="link">Contáctenos</a></li>
+         </ul>
+    </nav>
+</div>
+</header>
+
+<div class="block__container contact__container">
+    <div class="block__content contact__content">
+        <div class="formulario">
+            <div class="block__title">
+                Contacto
+            </div>
+            <div class="form__text">
+                Dejános un mensaje y nos comunicaremos contigo
+            </div>
+            <form class="form" id="form">
+                <section>
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="text" placeholder="Nombres y apellidos">
+                </section>
+                <section>
+                    <span><i class="fa-solid fa-at"></i></span>
+                    <input type="text" placeholder="Correo electrónico">
+                </section>
+                <section class="sms">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <textarea placeholder="Mensaje"></textarea>
+                </section>
+                <section>
+                    <input type="submit" value="Enviar" class="submit">
+                </section>
+            </form>
+        </div>
+        <div class="mapa">
+            <div class="block__title">
+                Oficina
+            </div>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.987243240152!2d149.13705041478792!3d-35.18187049582326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1654855092e0d3%3A0x15c5132f64562e49!2sPallin%20St%2C%20Gungahlin%20ACT%202912%2C%20Australia!5e0!3m2!1ses!2spe!4v1674689238956!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    <div class="block__content footer">
+        <div class="networks">
+            <a href="#" class="network">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="network">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="network">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="network">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="more__info">
+            <div class="info">Av. Leonardo Soplapuco 2023 frente</div>
+            <div class="info">Teléfono: 932966372</div>
+            <div class="info">E-mail: leosoplapuco29@gmail.com</div>
+            <div class="info">Libro de reclamaciones</div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+</body>
+</html>

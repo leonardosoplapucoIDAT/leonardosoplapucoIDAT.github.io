@@ -1,0 +1,21 @@
+.fondo-footer{
+    background:rgb(34, 33, 33);
+    padding:50px 0px;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer{
+    width: 300px;
+}
+.fondo-cierre{
+    background: rgb(50, 49, 49);
+    padding:20px 0px;
+    color: white;
+    text-align: center;
+}

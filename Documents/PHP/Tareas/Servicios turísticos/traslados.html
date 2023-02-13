@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Servicio Turísticos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/logo.png">
+        </a>
+
+        <div class="hamburguer">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="link">Inicio</a></li>
+                <li><a href="promociones.html" class="link">Promociones</a></li>
+                <li>
+                    <div class="link">
+                    Servicios <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="traslados.html" class="link">Traslados</a></li>
+                            <li><a href="guiadetrabajo.html" class="link">Guía de trabajo</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                    City Tours <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="lima.html" class="link">City Tours Lima</a></li>
+                            <li><a href="limaparacas.html" class="link">Lima y Paracas</a></li>
+                            <li><a href="limaparacasica.html" class="link">Lima - Paracas e Ica</a></li>
+                            <li><a href="limaparacasicanazca.html" class="link">Lima - Paracas - Ica y Nazca</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="galeria.html" class="link">Galeria de fotos</a></li>
+                <li><a href="contacto.html" class="link">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="accordion block__container block__container-5" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Traslados
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table>
+                    <tr>
+                        <th><span>#</span>Traslados USD (Sin IGV)</th>
+                        <th>1-5 per.</th>
+                        <th>6-10 per.</th>
+                    </tr>
+                    <tr>
+                        <td><span>1</span>Aeropuerto / Lima Cercado, San Isidro, Miraflores (o viceversa)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span>Aeropuerto / Cruz del Sur (Javier Prado) (o viceversa)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span>Puerto del Callao / Lima Cercado, San Isidro, Miraflores, Barranco</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span>Puerto del Callao / Aeropuerto</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>5</span>Estación Cruz del Sur (Javier Prado) / Lima Cercado, San Isidro, Miraflores (o viceversa)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tours en Lima
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table>
+                    <tr>
+                        <th><span>#</span>Traslados USD (Sin IGV)</th>
+                        <th>1-5 per.</th>
+                        <th>6-10 per.</th>
+                    </tr>
+                    <tr>
+                        <td><span>1</span>Restaurante - Lima Cercado, San Isidro, Miraflores (3hrs.)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span>Museo (3hrs.)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span>Pachacamac (3 1/2 hrs.)</td>
+                        <td>37</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Adicionales
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table>
+                    <tr>
+                        <th><span>#</span>Traslados USD (Sin IGV)</th>
+                        <th>1-5 per.</th>
+                        <th>6-10 per.</th>
+                    </tr>
+                    <tr>
+                        <td><span>1</span>Hora de disposición (Tarifa por hora, mínimo 4hrs.) hora adicional (Desde una hora)</td>
+                        <td>20</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span>Guía</td>
+                        <td>50</td>
+                        <td>70</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Full Day
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <table>
+                    <tr>
+                        <th><span>#</span>Traslados USD (Sin IGV)</th>
+                        <th>-</th>
+                        <th>-</th>
+                    </tr>
+                    <tr>
+                        <td><span>1</span>Caral</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span>Paracas</td>
+                        <td>500</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span>Lunahuana</td>
+                        <td>500</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span>Paracas - Ica</td>
+                        <td>550</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block__container block__container-6">
+    <div class="block__content block__content-6">
+        <div class="block__title">
+            Traslados
+        </div>
+
+        <div class="traslados">
+            <div class="traslado">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/miraflores.jpg" class="traslado-img">
+
+                <div class="traslado-container">
+                    <div class="traslado-content">
+                        <div class="priv">
+                            Privado
+                        </div>
+                        <div class="span">
+                            Traslado
+                        </div>
+                        <div class="traslado-pryce">
+                            USD $25.00
+                        </div>
+                        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/auto01.png" class="car">
+                    </div>
+                </div>
+
+                <a href="#" class="traslado-link">
+                    Reserva ya <i class="fa-regular fa-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="traslado">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/jiron.jpg" class="traslado-img">
+
+                <div class="traslado-container">
+                    <div class="traslado-content">
+                        <div class="priv">
+                            Privado
+                        </div>
+                        <div class="span">
+                            Traslado
+                        </div>
+                        <div class="traslado-pryce">
+                            USD $70.00
+                        </div>
+                        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/auto02.png" class="car">
+                    </div>
+                </div>
+
+                <a href="#" class="traslado-link">
+                    Reserva ya <i class="fa-regular fa-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="traslado">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/costa_verde.jpg" class="traslado-img">
+
+                <div class="traslado-container">
+                    <div class="traslado-content">
+                        <div class="priv">
+                            Privado
+                        </div>
+                        <div class="span">
+                            Traslado
+                        </div>
+                        <div class="traslado-pryce">
+                            USD $80.00
+                        </div>
+                        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/auto03.png" class="car">
+                    </div>
+                </div>
+
+                <a href="#" class="traslado-link">
+                    Reserva ya <i class="fa-regular fa-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="traslado">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/ica_sur.jpg" class="traslado-img">
+
+                <div class="traslado-container">
+                    <div class="traslado-content">
+                        <div class="priv">
+                            Privado
+                        </div>
+                        <div class="span">
+                            Traslado
+                        </div>
+                        <div class="traslado-pryce">
+                            USD $120.00
+                        </div>
+                        <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/auto01.png" class="car">
+                    </div>
+                </div>
+
+                <a href="#" class="traslado-link">
+                    Reserva ya <i class="fa-regular fa-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer block__content">
+        <div class="networks">
+            <a href="https://bit.ly/3HCH7iH" class="network" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com" class="network" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://bit.ly/3JnJWFv" class="network" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="http://bit.ly/3lsX6r3" class="network" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="more-info">
+            <div class="more">
+                Dirección: Av. Leonardo Soplapuco
+            </div>
+            <div class="more">
+                Tel: 932966372
+            </div>
+            <div class="more">
+                E-mail: leosoplapuco29@gmail.
+            </div>
+            <div class="more">
+                Libro de reclamaciones
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

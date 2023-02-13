@@ -1,0 +1,40 @@
+#redes{
+    position: fixed;
+    z-index: 1000000;
+    top: 400px;
+    left: 0;
+}
+#facebook a{
+    background: blue;
+    color: white;
+    text-decoration: none;
+    padding:10px 15px;
+    transition: 0.5s;
+}
+#facebook a:hover{
+    background: black;
+    padding: 10px 25px;
+    transition: 0.5s;
+}
+#youtube a{
+    background:red;
+    color: white;
+    text-decoration: none;
+    padding:10px 15px;
+}
+#youtube a:hover{
+    background: black;
+    padding: 10px 25px;
+    transition: 0.5s;
+}
+#twitter a{
+    background:skyblue;
+    color: white;
+    text-decoration: none;
+    padding:10px 15px;
+}
+#twitter a:hover{
+    background: black;
+    padding: 10px 25px;
+    transition: 0.5s;
+}

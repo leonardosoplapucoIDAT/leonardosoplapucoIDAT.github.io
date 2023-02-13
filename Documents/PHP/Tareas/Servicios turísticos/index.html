@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios turísticos</title>
+    <link rel="shortcut icon" href="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/logo.png">
+        </a>
+
+        <div class="hamburguer">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="link">Inicio</a></li>
+                <li><a href="promociones.html" class="link">Promociones</a></li>
+                <li>
+                    <div class="link">
+                    Servicios <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="traslados.html" class="link">Traslados</a></li>
+                            <li><a href="guiadetrabajo.html" class="link">Guía de trabajo</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                    City Tours <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="lima.html" class="link">City Tours Lima</a></li>
+                            <li><a href="limaparacas.html" class="link">Lima y Paracas</a></li>
+                            <li><a href="limaparacasica.html" class="link">Lima - Paracas e Ica</a></li>
+                            <li><a href="limaparacasicanazca.html" class="link">Lima - Paracas - Ica y Nazca</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="galeria.html" class="link">Galeria de fotos</a></li>
+                <li><a href="contacto.html" class="link">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="block__container__slider">
+    <div class="slider__container">
+        <div class="slide-contenedor">
+            <div class="mislider">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/banner01.png">
+            </div>
+
+            <div class="mislider">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/banner02.png">
+            </div>
+
+            <div class="mislider">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/banner03.png">
+            </div>
+
+            <i class="fa-solid fa-chevron-left slider__button before" onclick="avanzaSlide(-1)"></i>
+            <i class="fa-solid fa-chevron-right slider__button after" onclick="avanzaSlide(1)"></i>
+
+            <div class="barras">
+                <span class="barra active-" onclick="positionSlide(1)"></span>
+                <span class="barra" onclick="positionSlide(2)"></span>
+                <span class="barra" onclick="positionSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block__container block__container-1">
+    <div class="block__content block__content-1">
+        <div class="conten-1">
+            <section>
+                <div class="block__title">
+                    Transporte turístico en todo el Perú
+                </div>
+                <div class="text">
+                    Te damos la bienvenida amigo turista y te invitamos a descubrir lugares maravillosos, poniendo el Perú a tu alcance mediante un servicio de calidad basado en nuestra amplia experiencia. AU.RI.LI. Servicios Turísticos se amolda a tus expectativas y te lleva a donde tu lo solicites, asesorándote para que tu viaje sea seguro, cómodo y de plena satisfacción en tu recorrido por nuestro país.
+                </div>
+            </section>
+
+            <section>
+                <div class="block__sub-title">
+                    Servicios ofrecidos:
+                </div>
+                <ul class="list">
+                    <li>Traslados del aeropuerto al hotel o domicilio</li>
+                    <li>Traslados del hotel o domicilio al aeropuerto</li>
+                    <li>City Tours</li>
+                    <li>Full Days</li>
+                    <li>Viajes</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="conten-2">
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/viajeros.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="block__container block__container-2">
+    <div class="block__content block__conten-2">
+        <div class="block__title">
+            ¿Quiénes somos?
+        </div>
+        <div class="conten-3">
+            <div class="text">
+                Somos una empresa dedicada al servicio de Transporte Especial de Personas bajo la modalidad de servicio de Transporte Turístico de ámbito nacional. Contamos con modernos vehículos full-equipo, conductores profesionales del turismo, permisos y licencias. Nuestros vehículos cuentan con todo la seguridad correspondiente. También brindamos asesoría con respecto a paquetes turísticos a nivel nacional y nos adecuamos a tus necesidades en función a tu disponibilidad de tiempo y a tu economía.
+            </div>
+        </div>
+        <div class="conten-4">
+            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/carros.jpg">
+        </div>
+        <div class="conten-5">
+            <div class="mision">
+                <div class="block__title">Misión</div>
+                <div class="text">
+                    Brindar nuestro servicio de Transporte Turístico con Calidad, puntualidad y seguridad, ajustándonos a las necesidades de nuestros clientes y satisfaciendo sus expectativas.
+                </div>
+            </div>
+            <div class="vision">
+                <div class="block__title">Visión</div>
+                <div class="text">
+                    Ser una Empresa Peruana Líder en el servicio de Transporte Turístico y/o Ejecutivo a Nivel Nacional, con valores, ética y profesionalismo.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer block__content">
+        <div class="networks">
+            <a href="https://bit.ly/3HCH7iH" class="network" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com" class="network" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://bit.ly/3JnJWFv" class="network" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="http://bit.ly/3lsX6r3" class="network" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="more-info">
+            <div class="more">
+                Dirección: Av. Leonardo Soplapuco
+            </div>
+            <div class="more">
+                Tel: 932966372
+            </div>
+            <div class="more">
+                E-mail: leosoplapuco29@gmail.
+            </div>
+            <div class="more">
+                Libro de reclamaciones
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+</body>
+</html>
