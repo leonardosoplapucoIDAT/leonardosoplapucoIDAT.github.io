@@ -1,4 +1,8 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type');
+
 if (isset($_POST['Nombres']) && isset($_POST['Correo']) && isset($_POST['Mensaje'])) {
     $nombre = $_POST['Nombres'];
     $correo = $_POST['Correo'];
