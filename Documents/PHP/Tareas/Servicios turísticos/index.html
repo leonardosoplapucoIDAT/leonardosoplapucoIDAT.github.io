@@ -26,16 +26,18 @@
                 <li><a href="index.html" class="link">Inicio</a></li>
                 <li><a href="promociones.html" class="link">Promociones</a></li>
                 <li>
-                    <div class="link">
+                    <div class="link-d">
                     Servicios <i class="fa-solid fa-chevron-down"></i>
                         <ul class="dropdown">
-                            <li><a href="traslados.html" class="link">Traslados</a></li>
-                            <li><a href="guiadetrabajo.html" class="link">Guía de trabajo</a></li>
+                            <section>
+                                <li><a href="traslados.html" class="link">Traslados</a></li>
+                                <li><a href="guiadetrabajo.html" class="link">Guía de trabajo</a></li>
+                            </section>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <div class="link">
+                    <div class="link-d">
                     City Tours <i class="fa-solid fa-chevron-down"></i>
                         <ul class="dropdown">
                             <li><a href="lima.html" class="link">City Tours Lima</a></li>
@@ -78,6 +80,45 @@
         </div>
     </div>
 </div>
+
+<script>
+    let indice = 1;
+muestraSlides(indice);
+
+function avanzaSlide(n){
+    muestraSlides(indice+=n);
+}
+
+function positionSlide(n){
+    muestraSlides(indice=n);
+}
+
+setInterval(function tiempo(){
+    muestraSlides(indice+=1);
+},10000);
+
+function muestraSlides(n){
+    let i;
+    let slides = document.getElementsByClassName('mislider');
+    let barras = document.getElementsByClassName('barra');
+
+    if(n > slides.length){
+        indice = 1;
+    }
+    if(n < 1){
+        indice = slides.length;
+    }
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+    }
+    for(i = 0; i < barras.length; i++){
+        barras[i].className = barras[i].className.replace(" active-", "");
+    }
+
+    slides[indice-1].style.display = 'block';
+    barras[indice-1].className += ' active-';
+}
+</script>
 
 <div class="block__container block__container-1">
     <div class="block__content block__content-1">

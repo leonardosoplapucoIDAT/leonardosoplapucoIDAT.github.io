@@ -73,6 +73,7 @@ header{
     height: 4px;
     background: var(--white);
     border-radius: 10px;
+    transition: all 300ms ease;
 }
 
 .line-1{
@@ -99,10 +100,6 @@ header{
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.dropdown{
-    display: none !important;
 }
 
 .link{
@@ -641,7 +638,6 @@ textarea{
 }
 
 .form__section:nth-child(4){
-    background: red;
     border: 0;
     width: 100%;
     height: 50px;
@@ -827,4 +823,150 @@ textarea{
 .close:hover {
     color: #bbb;
     text-decoration: none;
-}  
+}
+
+@media screen and (max-width:800px){
+    .hamburguer{
+        display: block;
+    }
+    .line-1__active{
+        top: 50%;
+        translate: -50% -50%;
+        rotate: 45deg;
+        width: 70%;
+    }
+    .line-2__active{
+        width: 0;
+    }
+    .line-3__active{
+        top: 50%;
+        translate: -50% -50%;
+        rotate: -45deg;
+        width: 70%;
+    }
+    .menu{
+        position: fixed;
+        left: 0;
+        top: 80px;
+        background: var(--blue);
+        display: flex;
+        width: 100%;
+        height: auto;
+        transition: all 200ms ease;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu__active{
+        height: 250px;
+    }
+    .menu ul{
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .menu ul li{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0 20px;
+    }
+    .block__container__slider{
+        width: 100%;
+        height: 280px !important;
+        max-height: unset;
+    }
+    .promociones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .more-info{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .more{
+        text-align: left;
+        padding: 0 20px;
+    }
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .block__content-8{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form{
+        width: 100%;
+        max-width: unset;
+    }
+    .oficinas iframe{
+        width: 100%;
+        height: 270px;
+    }
+
+    .oficinas-list{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .block__container__slider{
+        width: 100%;
+        height: 130px !important;
+        max-height: unset;
+    }
+    .block__content{
+        grid-template-columns: 1fr;
+    }
+    .promociones{
+        grid-template-columns: 1fr;
+    }
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block__content-8{
+        grid-template-columns: 1fr;
+    }
+    .form{
+        width: 100%;
+        max-width: unset;
+    }
+    .oficinas iframe{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.link{
+    position: relative;
+}
+
+.link:hover > ul{
+    display: block !important;
+}
+
+.dropdown{
+    display: none !important;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.dropdown li{
+    width: 100%;
+    height: 30px;
+    background: var(--blue);
+    padding: 0 10px;
+}
