@@ -10,46 +10,54 @@
 </head>
 <body>
 <header>
-    <div class="header">
-        <a href="index.html" class="logo">
-            <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/logo.png">
-        </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://miguelpallin.com/Javascript%20and%20Jquery%20-%20Sesion%2012(Examen%20Final.)/img/logo.png">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="hamburguer">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="traslados.html">Traslados</a></li>
+                            <li><a class="dropdown-item" href="guiadetrabajo.html">Guía de trabajo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        City Tours
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="lima.html">City Tours Lima</a></li>
+                            <li><a class="dropdown-item" href="limaparacas.html">Lima y Paracas</a></li>
+                            <li><a class="dropdown-item" href="limaparacasica.html">Lima - Paracas e Ica</a></li>
+                            <li><a class="dropdown-item" href="limaparacasicanazca.html">Lima - Paracas - Ica y Nazca</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="galeria.html">Galeria de fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto.html">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html" class="link">Inicio</a></li>
-                <li><a href="promociones.html" class="link">Promociones</a></li>
-                <li>
-                    <div class="link">
-                    Servicios <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="dropdown">
-                            <li><a href="traslados.html" class="link">Traslados</a></li>
-                            <li><a href="guiadetrabajo.html" class="link">Guía de trabajo</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="link">
-                    City Tours <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="dropdown">
-                            <li><a href="lima.html" class="link">City Tours Lima</a></li>
-                            <li><a href="limaparacas.html" class="link">Lima y Paracas</a></li>
-                            <li><a href="limaparacasica.html" class="link">Lima - Paracas e Ica</a></li>
-                            <li><a href="limaparacasicanazca.html" class="link">Lima - Paracas - Ica y Nazca</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="galeria.html" class="link">Galeria de fotos</a></li>
-                <li><a href="contacto.html" class="link">Contáctenos</a></li>
-            </ul>
-        </nav>
-    </div>
+    </nav>
 </header>
 
 <div class="block__container block__container-8">
@@ -153,5 +161,7 @@
 
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </body>
 </html>
